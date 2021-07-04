@@ -19,6 +19,38 @@ ul, ol {
   list-style-type: none;
 }
 
+header .container-fluid {
+  border-bottom: 3px solid orangered;
+}
+
+header .container-fluid a:not(.download):hover {
+  background-color: #dfe4ea;
+}
+
+header .container-fluid a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .container-fluid .viewport-icons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+header .container-fluid .right-side-icons a {
+  font-size: 10px;
+}
+
 header ul.list-group li.list-group-item {
   background-color: transparent;
   -webkit-transition: color 0.2s linear;
@@ -86,5 +118,14 @@ section#cards .card .card-header.sale::before {
 
 section#cards .card .card-footer > .buton:hover {
   background-color: #212529;
+}
+
+a.download {
+  background-color: #f0e3e7;
+  color: #dc392d !important;
+}
+
+a.download:hover {
+  background-color: #f0e3e773;
 }
 /*# sourceMappingURL=style.css.map */

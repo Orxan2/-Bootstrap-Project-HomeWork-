@@ -1,7 +1,6 @@
 window.addEventListener('load',function(params) {
-    
-    // let menu = buton.nextElementSibling;
-    // let buton = document.getElementById('open');   
+
+    // dropdown open-close 
     let menus = document.querySelectorAll('.dropdown-menu1');
 
     menus.forEach(menu => {
@@ -29,6 +28,8 @@ window.addEventListener('load',function(params) {
             };
     });
 
+
+    // bar-menu open-close
     let menubar = document.getElementById('menubar');
     let barMenu = menubar.parentElement.parentElement.nextElementSibling;
     menubar.addEventListener('click', OpenMenu);
@@ -43,6 +44,17 @@ window.addEventListener('load',function(params) {
         }
 
 
+    }
+
+
+    // Close HEader 
+    let closeButon = this.document.getElementById('close');
+    let header = this.document.querySelector('.container-fluid');    
+  
+    closeButon.addEventListener('click',closeHeader);
+
+    function closeHeader(params) {
+        header.classList.add('d-none');
     }
 
 });
