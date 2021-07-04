@@ -2,14 +2,15 @@
 
 header {
     .container-fluid {
-border-bottom: 3px solid orangered;
+        border-bottom: 3px solid orangered;
+
         a:not(.download):hover {
             background-color: #dfe4ea;
         }
 
         a:focus {
             box-shadow: none;
-        }       
+        }
 
         .viewport-icons {
             a {
@@ -23,13 +24,17 @@ border-bottom: 3px solid orangered;
         }
 
         .right-side-icons {
-
             a {
                 font-size: 10px;
             }
+            a#close{
+                
+                width: 30px;
+                height: 30px;
+            }
         }
-
     }
+
     ul.list-group {
         li.list-group-item {
             background-color: transparent;

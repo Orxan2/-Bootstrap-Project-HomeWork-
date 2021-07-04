@@ -51,6 +51,11 @@ header .container-fluid .right-side-icons a {
   font-size: 10px;
 }
 
+header .container-fluid .right-side-icons a#close {
+  width: 30px;
+  height: 30px;
+}
+
 header ul.list-group li.list-group-item {
   background-color: transparent;
   -webkit-transition: color 0.2s linear;
