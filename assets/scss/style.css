@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+header ul.list-group li.list-group-item {
+  background-color: transparent;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+header ul.list-group li.list-group-item a {
+  color: #6c757d;
+}
+
+header ul.list-group li.list-group-item.active {
+  background-color: transparent;
+}
+
+header ul.list-group li.list-group-item.active a {
+  color: #212529;
+}
+
+header ul.list-group li.list-group-item:hover a {
+  color: black;
+}
+
+header .font {
+  font-size: 25px;
+}
+
+.buton:hover {
+  background-color: #212529;
+}
+
+.card {
+  height: 375px;
+}
+
+.card .sale {
+  position: relative;
+}
+
+.card .sale::before {
+  content: "Sale";
+  position: absolute;
+  font-size: 0.75rem;
+  top: 5%;
+  right: 5%;
+  color: white;
+  background-color: #212121;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+  cursor: text;
+}
+
+.dropdown-menu1 {
+  width: 160px;
+}
+
+.dropdown-menu1 a {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown-menu1 a:hover {
+  background-color: #dfe4ea;
+}
+
+.dropdown-menu1 a:focus {
+  color: white !important;
+  background-color: blue;
+}
+
+.h-0 {
+  height: 0px;
+  overflow: hidden;
+}
+
+.h-100 {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  height: 100px;
+}
+/*# sourceMappingURL=style.css.map */
