@@ -1,14 +1,32 @@
 @import "reset";
 
 header {
-    // background-color: #f8f9fa;
+    
     ul.list-group {
+
         li.list-group-item {
             background-color: transparent;
             transition: color 0.2s linear;
+
             a {
                 color: #6c757d;
             }
+
+            .dropdown-menu1 {
+                width: 160px;
+
+                a {
+                    transition: none;
+                }
+                a:hover {
+                    background-color: #dfe4ea;
+                }
+                a:focus {
+                    color: white !important;
+                    background-color: blue;
+                }
+            }
+            
         }
         li.list-group-item.active {
             background-color: transparent;
@@ -21,6 +39,7 @@ header {
                 color: black;
             }
         }
+
     }
 
     .font {
@@ -28,55 +47,38 @@ header {
     }
 }
 
-.buton:hover {
-    background-color: #212529;
-}
-.card {
-    height: 375px;
+section#cards{
 
-    .sale {
-        position: relative;
+    .card {
+        height: 375px;
+    
+        .card-header.sale {
+            position: relative;
+        }
+        .card-header.sale::before {
+            content: "Sale";
+            position: absolute;
+            font-size: 0.75rem;
+            top: 5%;
+            right: 5%;
+            color: white;
+            background-color: #212121;
+            padding: 0 0.5rem;
+            border-radius: 0.25rem;
+            cursor: text;
+        }
+    
+        .card-footer{
+    
+           & >.buton:hover {
+                background-color: #212529;
+            }
+        }
     }
-    .sale::before {
-        content: "Sale";
-        position: absolute;
-        font-size: 0.75rem;
-        top: 5%;
-        right: 5%;
-        color: white;
-        background-color: #212121;
-        padding: 0 0.5rem;
-        border-radius: 0.25rem;
-        cursor: text;
-    }
-}
-
-.dropdown-menu1 {
-    width: 160px;
-    a {
-        transition: none;
-    }
-    a:hover {
-        background-color: #dfe4ea;
-    }
-    a:focus {
-        color: white !important;
-        background-color: blue;
-    }
+   
 }
 
-// .h-0{
-//     height: 0;
-//     display: none;
-// }
-.h-0 {
-   height:  0px;
-   overflow: hidden;
 
-}
-.h-100{
-    transition: all 1s linear;
-height: 100px;
-}
+
 
 

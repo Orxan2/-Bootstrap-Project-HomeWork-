@@ -16,7 +16,7 @@ window.addEventListener('load',function(params) {
                     menu.classList.remove('d-none');
                 }
                 else{
-                    menu.classList.add('d-none');
+                    menu.classList.add('d-none');                    
                 }
                
                 let list = menu.children[0].children;                
@@ -33,13 +33,13 @@ window.addEventListener('load',function(params) {
     let barMenu = menubar.parentElement.parentElement.nextElementSibling;
     menubar.addEventListener('click', OpenMenu);
     function OpenMenu(params) {
-        if (barMenu.classList.contains('h-0')) {
-            barMenu.classList.remove('h-0');
-            barMenu.classList.add('h-100');
+        if (barMenu.classList.contains('d-none')) {
+            barMenu.classList.remove('d-none');
+            barMenu.classList.add('d-block');
         }
         else {
-            barMenu.classList.remove('h-100');
-            barMenu.classList.add('h-0');
+            barMenu.classList.remove('d-block');
+            barMenu.classList.add('d-none');
         }
 
 

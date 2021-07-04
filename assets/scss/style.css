@@ -29,6 +29,24 @@ header ul.list-group li.list-group-item a {
   color: #6c757d;
 }
 
+header ul.list-group li.list-group-item .dropdown-menu1 {
+  width: 160px;
+}
+
+header ul.list-group li.list-group-item .dropdown-menu1 a {
+  -webkit-transition: none;
+  transition: none;
+}
+
+header ul.list-group li.list-group-item .dropdown-menu1 a:hover {
+  background-color: #dfe4ea;
+}
+
+header ul.list-group li.list-group-item .dropdown-menu1 a:focus {
+  color: white !important;
+  background-color: blue;
+}
+
 header ul.list-group li.list-group-item.active {
   background-color: transparent;
 }
@@ -45,19 +63,15 @@ header .font {
   font-size: 25px;
 }
 
-.buton:hover {
-  background-color: #212529;
-}
-
-.card {
+section#cards .card {
   height: 375px;
 }
 
-.card .sale {
+section#cards .card .card-header.sale {
   position: relative;
 }
 
-.card .sale::before {
+section#cards .card .card-header.sale::before {
   content: "Sale";
   position: absolute;
   font-size: 0.75rem;
@@ -70,32 +84,7 @@ header .font {
   cursor: text;
 }
 
-.dropdown-menu1 {
-  width: 160px;
-}
-
-.dropdown-menu1 a {
-  -webkit-transition: none;
-  transition: none;
-}
-
-.dropdown-menu1 a:hover {
-  background-color: #dfe4ea;
-}
-
-.dropdown-menu1 a:focus {
-  color: white !important;
-  background-color: blue;
-}
-
-.h-0 {
-  height: 0px;
-  overflow: hidden;
-}
-
-.h-100 {
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
-  height: 100px;
+section#cards .card .card-footer > .buton:hover {
+  background-color: #212529;
 }
 /*# sourceMappingURL=style.css.map */
